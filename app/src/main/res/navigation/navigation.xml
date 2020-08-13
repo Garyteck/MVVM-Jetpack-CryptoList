@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/CryptoListFragment">
+
+    <fragment
+        android:id="@+id/CryptoListFragment"
+        android:name="com.example.cryptolist.CryptoListFragment"
+        android:label="@string/hello_blank_fragment"
+        tools:layout="@layout/fragment_crypto_list">
+
+    </fragment>
+
+</navigation>
