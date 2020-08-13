@@ -1,6 +1,5 @@
 package com.example.cryptolist
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -9,7 +8,6 @@ import androidx.core.content.ContextCompat
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import timber.log.Timber
 import java.text.DecimalFormat
 import java.util.*
 
