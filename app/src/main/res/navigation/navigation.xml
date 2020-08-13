@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/CryptoListFragment"
-        android:name="com.example.cryptolist.CryptoListFragment"
+        android:name="com.example.cryptolist.ui.view.CryptoListFragment"
         android:label="@string/hello_blank_fragment"
         tools:layout="@layout/fragment_crypto_list">
 

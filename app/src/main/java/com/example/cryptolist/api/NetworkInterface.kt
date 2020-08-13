@@ -1,5 +1,7 @@
-package com.example.cryptolist
+package com.example.cryptolist.api
 
+import com.example.cryptolist.data.entity.CryptoCurrency
+import com.example.cryptolist.data.entity.CryptoPrice
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

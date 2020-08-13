@@ -1,4 +1,4 @@
-package com.example.cryptolist
+package com.example.cryptolist.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,6 +8,9 @@ import androidx.core.content.ContextCompat
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cryptolist.R
+import com.example.cryptolist.data.entity.CryptoCurrency
+import com.example.cryptolist.resIdByName
 import java.text.DecimalFormat
 import java.util.*
 

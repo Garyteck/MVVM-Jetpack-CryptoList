@@ -1,10 +1,13 @@
-package com.example.cryptolist
+package com.example.cryptolist.data.remote
 
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadType
 import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import androidx.room.withTransaction
+import com.example.cryptolist.api.NetworkInterface
+import com.example.cryptolist.data.entity.CryptoCurrency
+import com.example.cryptolist.data.local.CryptoDatabase
 import retrofit2.HttpException
 import java.io.IOException
 
@@ -12,7 +15,7 @@ import java.io.IOException
 class RepositoryMediator(
     val db: CryptoDatabase,
     val api: NetworkInterface
-) : RemoteMediator<Int,CryptoCurrency>() {
+) : RemoteMediator<Int, CryptoCurrency>() {
 
 
     override suspend fun load(

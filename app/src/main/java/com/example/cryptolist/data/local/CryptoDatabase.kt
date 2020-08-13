@@ -1,16 +1,18 @@
-package com.example.cryptolist
+package com.example.cryptolist.data.local
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.cryptolist.data.entity.CryptoCurrency
+import com.example.cryptolist.data.entity.CryptoPrice
 
 
 const val DB_NAME = "crypto-database"
 
 @Database(
     entities = [CryptoCurrency::class, CryptoPrice::class],
-    version = 4,
+    version = 5,
     exportSchema = true
 )
 abstract class CryptoDatabase : RoomDatabase() {

@@ -1,4 +1,4 @@
-package com.example.cryptolist
+package com.example.cryptolist.ui.view
 
 import android.content.Context
 import android.os.Bundle
@@ -14,6 +14,13 @@ import androidx.lifecycle.lifecycleScope
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.cryptolist.R
+import com.example.cryptolist.api.NetworkInterface
+import com.example.cryptolist.data.local.CryptoDatabase
+import com.example.cryptolist.data.repository.Repository
+import com.example.cryptolist.ui.adapter.CryptoAdapter
+import com.example.cryptolist.ui.adapter.ProgressAdapter
+import com.example.cryptolist.ui.viewmodel.CryptoViewModel
 import kotlinx.android.synthetic.main.fragment_crypto_list.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collectLatest
