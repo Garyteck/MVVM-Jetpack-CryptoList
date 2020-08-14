@@ -1,3 +1,5 @@
+![Image](https://miro.medium.com/max/262/1*pso0NfstOrEHq4o6UGvnKQ.gif)
+
 # CoinCap : Check the price of your crypto
 
 This Android app will use the [coincap API](https://docs.coincap.io/) to show the most important crypto currencies traded on the market.
