@@ -7,7 +7,7 @@ import com.example.cryptolist.data.entity.CryptoCurrency
 import com.example.cryptolist.data.repository.Repository
 import kotlinx.coroutines.flow.Flow
 
-class CryptoViewModel @ExperimentalPagingApi constructor(private val repository: Repository) : ViewModel() {
+class CryptoViewModel @ExperimentalPagingApi constructor( repository: Repository) : ViewModel() {
 
     @ExperimentalPagingApi
     val cryptos : Flow<PagingData<CryptoCurrency>> = repository.getCryptos()
